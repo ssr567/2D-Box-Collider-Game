@@ -92,6 +92,7 @@ function gameLoop() {
   if (isCollided(e1, player) || isCollided(e2, player) || isCollided(e3, player)) {
     gameOn = false  
     window.alert('Game Over')
+    location.reload()
   }
 
   drawBox(player)
